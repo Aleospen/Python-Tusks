@@ -1,10 +1,10 @@
 import math
 #1
-numb1 = int(input("Введите число а "))
-numb1_2 = int(input("Введите число b "))
-ans1_2 = min(numb1, numb1_2)
-ans1 = max(numb1, numb1_2)
-print(ans1, "= Максимальное", ans1_2, "= Минимальное")
+a = int(input("Введите число а "))
+b = int(input("Введите число b "))
+answer = min(a, b)
+answerSecundus = max(a, b)
+print(answer, "= Максимальное", answerSecundus, "= Минимальное")
 
 #2
 m = int(input("Введите число m "))
@@ -16,12 +16,12 @@ else:
  
 #3
 cord = int(input("Введите координаты точки "))
-if cord >=8:
-  print("Точка вне областей")
-elif cord <=4:
+if cord >4:
+  print("Точка во второй областей")
+elif cord <4:
     print("Точка в первой зоне")
 else:
-    print("Точка во второй области")
+    print("Точка на границе областей")
 
 #4
 x = int(input("число x : "))
@@ -32,65 +32,52 @@ else:
 print()
 
 #5
-R = int(input("R круга : "))
-n = int(input("сторона квадрата : "))
+R = int(input("Радиус круга : "))
+n = int(input("Сторона квадрата : "))
 if(R * R * 3.14 > n * n):
-	print("круг больше квадрата")
+	print("Круг больше квадрата")
 elif(R * R * 3.14 < n * n):
-	print("квадрат больше круга")
+	print("Квадрат больше круга")
 else:
-	print("они равны")
-print()
-"""
-radOfRoud = int(input("Введите радиус круга "))
-sideOfSquare = int(input("Введите сторону квадрата"))
-areaOfRound = math.pi * radOfRoud**2 
-areaOfSquare = sideOfSquare  * 4
-if areaOfRound == areaOfSquare:
-    print("Площади равны")
-elif areaOfSquare > areaOfRound:
-    print("Площадь квадрата больше")
-else:
-    print("Площадь круга больше")
-"""
+	print("Круг и квадрат равны")
+
+
 
 #6
-n6 = 0
-if n6%2==0:
-    print("Next will be", n6+2)
-else:
-    n6%2!=0
-
-    print("Следущим будет", n6+1)
+numb6 = int(input("Введите целое число "))
+afterN = numb6 + 2
+if (numb6 % 2 == 0):
+  print("Следующее четное после ", numb6, " это ", afterN )
 
 #7
-n6 = int(input("Введите натуральное число: "))
-if n6%2==0:
-    print("Число", n6+2)
+n7 = int(input("Введите натуральное число: "))
+if n7>9 & n7 < 100:
+    print("Число", n7, " двузначное")
 else:
-    print("Next will be", n6+1)
+  print("Число не двузначное")
+
 
 #8
-numi8 = 2
-numi82 = 6
-if numi8%numi82==0:
-    print("True")
-elif numi82%numi8==0:
-    print("True")
+integer = int(input("Введите число на проверку делимости "))
+integer2 = int(input("Введите второе число на проверку делимости "))
+if integer % integer2 == 0:
+    print("Есть делитель")
+elif integer2 % integer == 0:
+    print("Есть делитель")
 else:
     print("Нету делителя")
 
 #9
 coordOfPoint1, coordOfPoint1_2 = [int(i) for i in input("Введите две координаты точки :").split()]
-if coordOfPoint1 >=2 and coordOfPoint1_2 >=3:
+if coordOfPoint1 > 2 and coordOfPoint1_2 > 3:
     print("Точка в первой области")
 else:
     print("Точка вне первой области")
 
 #11
-j = int(input("Введите стороны треугольника:"))
-y = int(input("Введите стороны треугольника:"))
-u = int(input("Введите стороны треугольника:"))
+j = int(input("Введите сторону треугольника: "))
+y = int(input("Введите сторону треугольника: "))
+u = int(input("Введите сторону треугольника: "))
 if j==y==u:
      print("Треугольник равностороний")
 else:
@@ -106,8 +93,8 @@ else:
 
 #13
 print("Введите размеры конверта, в мм.: ")
-aboba = int(input("a ="))
-boba = int(input("b ="))
+aboba = int(input("a = "))
+boba = int(input("b = "))
 print("Введите размеры открытки, в мм.:")
 c = int(input("c ="))
 d = int(input("d ="))
@@ -133,20 +120,7 @@ else:
         c = c * int(a%10)
 print(c)
 
-'''
-q = int(input("Введите натуральное четырехзначное число: "))
-if q/3==0:
-     ancbp = q/3
-     qw = str(q)
-     print(qw, "/ 3 =", ancbp)
-else:
- q_22 = q//1000
-q_2 = q//100
-q_3 = q//10
-q_4 = q//1110
-ans_14 = q_22+q_2+q_3+q_4
-print("Сумма его чисел ", ans_14)
-'''
+
 
 
 
