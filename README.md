@@ -1,1 +1,1 @@
-# PythonProjects for my college
+# Python Projects for my college
